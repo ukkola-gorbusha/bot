@@ -7,12 +7,12 @@ import asyncio
 import config
 import locale
 import calendar
-from keyboards import kb1, kb2
-from random_fox import fox
+from keyboards.keyboards import kb1, kb2
+from utils.random_fox import fox
 from random import randint
 
 
-
+ 
 
 
 
