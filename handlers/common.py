@@ -4,27 +4,19 @@ from aiogram.types import Message
 from aiogram.filters import Command
 from datetime import datetime
 import asyncio
-
 import locale
 import calendar
-from bot.keyboards.keyboards import kb1, kb2
-from bot.utils.random_fox import fox
+from keyboards.keyboards import kb1, kb2
+from utils.random_fox import fox
 from random import randint
 
-router = Router()
+
+ 
+router =Router()
 
 
 
-# Ваш токен бота
-TOKEN = config.token
 
-
-# логирование
-logging.basicConfig(level=logging.INFO)
-
-# Инициализация бота и диспетчера
-bot = Bot(token=TOKEN)
-dp = Dispatcher()
 
 # Хэндлер для команды /start
 @router.message(Command("start"))
@@ -189,7 +181,7 @@ async def msg_echo(message: types.Message):
       await message.answer(f'пока, {name}')
      elif "Ты кто?" in msg_user:
       await message.answer_dice(emoji="🎲")
-     elif "лиса" == msg_user:
+     elif "клава" == msg_user:
       await message.answer(f'Смотри что у меня есть, {name}', reply_markup=kb1)
      else:
       await message.answer(f'Я не знаю такого слова')
@@ -197,6 +189,6 @@ async def msg_echo(message: types.Message):
 
 
     
-
+    
 
 
