@@ -11,15 +11,17 @@ button7 = types.KeyboardButton(text='Время')
 button8 = types.KeyboardButton(text='Дата')
 button9 = types.KeyboardButton(text='Время')
 button10 = types.KeyboardButton(text='Число')
+button11 = types.KeyboardButton(text='/prof')
 
 keyboard1 = [
     [button4, button2, button5, button10],
-    [button8, button1, button6, button3]
+    [button8, button1, button6, button3],
+    [button11]
 ]
 
 
 keyboard2 = [
-    [button2]
+    [button2,button11]
  
 
     ]

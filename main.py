@@ -27,8 +27,9 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
+dp.include_router(career_choice.router)
 dp.include_router(common.router)
-#dp.include_router(career_choice.router)
+
 
 
 # Основная точка входа
